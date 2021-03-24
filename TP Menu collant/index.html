@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fixed.css">
+</head>
+<body>
+    <div class="topbar">
+        LOGO
+    </div>
+
+    <div class="menu" data-sticky>
+        <a href="#">Item 1</a>
+        <a href="#">Item 2</a>
+        <a href="#">Item 3</a>
+        <a href="#">Item 4</a>
+        <a href="#">Item 5</a>
+    </div>
+
+    <div class="content">
+        <div class="main">
+            <h1>Je suis un titre</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae unde asperiores sequi nam dolorem nulla veritatis repellendus pariatur ratione eos sed qui laborum, velit molestias beatae optio molestiae! Sit, non.</p>
+            <div style="background-color:#d5d5d5; height: 4000px"></div>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-container">
+                <div class = "bloc" data-sticky data-offset="68" data-constraint=".sidebar">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, consequatur rerum impedit repellendus doloribus praesentium facilis accusantium excepturi sit tenetur similique dignissimos! Doloremque accusamus suscipit minima deserunt impedit provident ad.
+                </div>
+                <br>
+                <div class="bloc">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae blanditiis numquam ad magni odit esse pariatur quo tenetur laboriosam porro consequuntur voluptatem dolor distinctio, dignissimos voluptas. Repudiandae dignissimos perspiciatis architecto!
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"></div>  
+    <!-- permet au body d'avoir la bonne hauteur (à cause des float) -->
+    <script src="fixed.js"></script>
+</body>
+</html>

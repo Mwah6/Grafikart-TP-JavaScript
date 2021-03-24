@@ -1,0 +1,76 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    font-size: 14px;
+}
+body {
+    font-family:  sans-serif;
+    background-color: #EEE;
+    margin: 0;
+    color: #6f6f6f;
+}
+
+.topbar {
+    background-color: white;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    padding: 15px 45px;
+    margin: 0 10px;
+}
+.menu {
+    z-index: 1;
+    display: block;
+    text-decoration: none;
+    padding: 0;
+    color: #505050;
+    border: 1px solid #bababa;
+    margin: 0 10px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: #505050;
+    border-right: 1px solid #bababa;
+}
+
+.menu a:hover{
+    background-color: #EEE;
+
+}
+.sidebar.fixed {
+    opacity: .7;
+}
+.content {
+    margin-top: 20px;
+}
+.main {
+    padding: 0 20px;
+    float: left;
+    width: 75%;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);   
+}
+.sidebar {
+    
+    float: right;
+    width: 25%;
+    padding: 0 20px;
+
+}
+.sidebar-container {
+    position: relative;
+    height: 600px;
+    border: 2px dashed #bababa;
+}
+.bloc {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    padding: 5px;
+}

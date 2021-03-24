@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                color: #424242;
+                font-family: sans-serif;
+            }
+            /* 1ere solution */
+            .spoiler-content {
+                display: inline-block;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                overflow: hidden;
+                transition: opacity 0.5s;
+            }
+            .spoiler-content.visible {
+                display: inline;
+                width: auto;
+                height: auto;
+                opacity: 1;
+            }
+            /* // Autre solution */
+            /* .spoiler {
+                background-color: #424242;
+                transition: background-color 0.5s;
+            }
+            .spoiler.visible {
+                background-color: transparent;
+            } */
+        </style>
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, natus! Ea molestias accusantium nostrum asperiores aut, aperiam doloremque ipsam quis nemo fugit deleniti libero explicabo dolores, tempore assumenda dolor numquam!</p>
+
+        <p class="spoiler">
+            Monsieur X meurt à la fin
+        </p>
+        <p>
+        <span>Rem expedita nam aliquid voluptates dolor, saepe doloremque eos consectetur commodi laudantium, deserunt est nesciunt. Beatae repellendus laudantium quae, dignissimos at blanditiis!</span>
+        <span>Laborum optio et impedit doloremque laboriosam,<span class="spoiler"> esse ex libero, suscipit aliquam</span> voluptatum illo similique eveniet asperiores error molestiae eaque iure, inventore explicabo!</span>
+        <span>Provident assumenda nesciunt laborum itaque, dolores eius eos neque accusamus dolore autem praesentium dicta laboriosam officiis ullam molestiae quae suscipit minus animi?</span>
+        </p>
+        <script src="spoiler.js"></script>
+    </body>
+</html>
